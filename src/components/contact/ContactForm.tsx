@@ -32,7 +32,7 @@ export default function ContactForm() {
           <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold font-semibold">
             <MessageCircle className="h-4 w-4 text-[#25D366]" /> Instant Booking via WhatsApp
           </div>
-          <h2 className="font-display text-2xl md:text-3xl font-bold">Book Appointment via WhatsApp</h2>
+          <h2 className="font-display text-2xl md:text-3xl font-bold">Book via WhatsApp</h2>
           <p className="text-sm text-muted-foreground">
             Connect directly with our hospital front desk on WhatsApp (+91 98120 38750) for immediate slot availability and confirmation.
           </p>
@@ -86,7 +86,7 @@ export default function ContactForm() {
             className="rounded-full bg-[#25D366] text-white px-8 py-3.5 text-sm font-semibold inline-flex items-center gap-2 hover:scale-[1.03] transition-transform cursor-pointer shadow-elegant"
           >
             <MessageCircle className="h-5 w-5 fill-current" />
-            Book Appointment via WhatsApp
+            Book Appointment
           </button>
         </div>
       </form>

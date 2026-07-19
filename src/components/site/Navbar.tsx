@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Moon, Sun, Menu, X, MessageCircle } from "lucide-react";
 import { useUIStore } from "@/store/useUIStore";
 import logo from "@/assets/uploads/logo-hospital.jpeg";
 
@@ -53,13 +53,13 @@ export default function Navbar() {
         <div className={`flex items-center justify-between rounded-2xl px-4 py-2 transition-all duration-500 ${
           scrolled ? "glass shadow-elegant" : "bg-transparent"
         }`}>
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative h-11 w-11 overflow-hidden rounded-full ring-1 ring-gold/40">
-              <Image src={logo} alt="Dhawan Orthopaedic Hospital" className="h-full w-full object-cover" />
+          <Link href="/" className="flex items-center gap-3.5 group">
+            <div className="relative h-10 w-10 overflow-hidden rounded-xl bg-white p-1 ring-1 ring-gold/20 shadow-inner flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+              <Image src={logo} alt="Dhawan Orthopaedic Hospital" className="h-full w-full object-contain" />
             </div>
             <div className="hidden sm:flex flex-col leading-tight">
-              <span className="font-display text-lg text-foreground font-semibold">Dhawan</span>
-              <span className="text-[10px] tracking-[0.25em] text-gold uppercase font-medium">Healthcare Group</span>
+              <span className="font-display text-base text-foreground font-semibold tracking-wide">Dhawan</span>
+              <span className="text-[9px] tracking-[0.22em] text-gold uppercase font-bold">Healthcare Group</span>
             </div>
           </Link>
 
@@ -113,9 +113,10 @@ export default function Navbar() {
               href="https://wa.me/919812038750?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noreferrer"
-              className="hidden md:inline-flex items-center rounded-full bg-[#25D366] text-white px-5 py-2 text-sm font-semibold hover:scale-[1.03] hover:shadow-glow transition-all"
+              className="hidden md:inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-5 py-2.5 text-sm font-semibold hover:scale-[1.03] hover:shadow-glow transition-all"
             >
-              Book Appointment via WhatsApp
+              <MessageCircle className="h-4 w-4 fill-current" />
+              <span>Book Appointment</span>
             </a>
             <button
               onClick={toggleMobileMenu}
@@ -153,9 +154,10 @@ export default function Navbar() {
                 href="https://wa.me/919812038750?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-2 text-center rounded-xl bg-[#25D366] text-white py-2.5 text-sm font-semibold block"
+                className="mt-2 text-center rounded-xl bg-[#25D366] text-white py-2.5 text-sm font-semibold flex items-center justify-center gap-2"
               >
-                Book Appointment via WhatsApp
+                <MessageCircle className="h-4 w-4 fill-current" />
+                <span>Book Appointment</span>
               </a>
             </motion.div>
           )}

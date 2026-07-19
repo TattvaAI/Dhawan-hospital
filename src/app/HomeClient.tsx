@@ -67,7 +67,7 @@ export default function HomeClient() {
                 rel="noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-[#25D366] text-white px-6 py-3 text-sm font-semibold shadow-elegant hover:scale-[1.03] transition-all cursor-pointer"
               >
-                <MessageCircle className="h-4 w-4" /> Book Appointment via WhatsApp
+                <MessageCircle className="h-4 w-4 fill-current" /> Book Appointment
               </a>
               <a href="tel:01712662953" className="inline-flex items-center gap-2 rounded-full border border-gold/40 text-foreground px-6 py-3 text-sm font-semibold glass hover:border-gold hover:scale-[1.03] transition-all">
                 <Phone className="h-4 w-4 text-gold animate-pulse" /> Emergency Care

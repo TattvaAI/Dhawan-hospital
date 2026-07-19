@@ -60,7 +60,7 @@ export default function ServicesClient() {
                       className="rounded-full bg-[#25D366] text-white px-5 py-2.5 text-sm font-semibold hover:scale-[1.03] transition-transform shadow-elegant flex items-center gap-2"
                     >
                       <MessageCircle className="h-4 w-4 fill-current" />
-                      Book Appointment via WhatsApp
+                      Book Appointment
                     </a>
                   </div>
                 </DialogContent>
